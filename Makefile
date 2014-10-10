@@ -1,5 +1,5 @@
 # This is a makefile
-    mypaper.pdf: mypaper.tex Figs/fig1.pdf Figs/fig2.pdf  
+    mypaper.pdf: mypaper.tex Figs/fig1.pdf Figs/fig2.pdf Figs/fig3.pdf  
 
     # The target is 'mypaper.pdf and what follows after the ':' are dependences
 
@@ -16,3 +16,7 @@
     Figs/fig2.pdf: R/fig2.R     
     # same for fig2  
 		cd R;R CMD BATCH fig2.R
+
+    Figs/fig3.pdf: R/fig3.R     
+    # same for fig3
+		cd R;R CMD BATCH fig3.R
