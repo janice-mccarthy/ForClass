@@ -10,6 +10,7 @@ mypaper.pdf: mypaper.bib mypaper.tex Figs/fig1.pdf Figs/fig2.pdf
 
 Figs/fig1.pdf: R/fig1.R     
 # Target is 'Figs/fig1.pdf' - it depends on an 'R' script called 'fig1.R'
+    -mkdir Figs
     cd R;R CMD BATCH fig1.R # Go to R directory and execute the script to create fig1
 
 Figs/fig2.pdf: R/fig2.R     
